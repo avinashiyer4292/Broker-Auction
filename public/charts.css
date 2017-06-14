@@ -1,0 +1,48 @@
+
+.content-row-1{
+	position:relative !important;
+	margin-left:30% !important;
+	display:block !important;
+	float:left !important;
+}
+
+.content-row-2{
+	margin-top: 10%;
+	position:relative !important;
+	margin-left:30% !important;
+	display:block !important;
+	float:left !important;
+}
+
+canvas{
+  width:300px !important;
+  height:300px !important;
+
+}
+.pie-content-1,.table-content-1{
+	display:block;
+	float:left;
+	width: 80vh;
+	height: 60vh;
+	margin-left: 20% !important;
+
+}
+
+.bar-content-1,.table-content-2{
+	display:block;
+	float:left;
+	width: 80vh;
+	height: 60vh;
+	margin-left: 20% !important;
+	
+}
+
+#pieChart, #barChart{
+	width: 200px !important;
+	height: 200px !important;
+}
+
+#profit{
+	color: green;
+	font-weight: bold;
+}

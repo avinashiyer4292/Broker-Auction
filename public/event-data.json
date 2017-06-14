@@ -1,0 +1,312 @@
+[
+  {
+    "eventId": 0,
+    "logoPath": "img/baseball.png",
+    "eventName": "Artworlds",
+    "eventDate": "2017-02-20T01:59:59 +08:00",
+    "venue": "841 Murdock Court, Cavalero, Michigan, 9643",
+    "numberOfTickets": 660,
+    "numberOfBids": 10,
+    "bidToBeatPrice": "$3,939.95",
+    "bidEndTime": "2014-12-06T07:55:05 +08:00",
+    "businessOwner": "Kathy Joseph",
+    "eventConfigureData": {
+      "eventId": 0,
+      "logoPath": "http://placehold.it/32x32",
+      "eventName": "Pyramis",
+      "eventDate": "2014-12-29T02:17:12 +08:00",
+      "venue": "524 Gain Court, Barstow, Nebraska, 8004",
+      "numberOfTickets": 263,
+      "floorPrice": "$1,579",
+      "cielingPrice": "$3,333"
+    },
+    "eventBidData": {
+      "eventId": 0,
+      "logoPath": "http://placehold.it/32x32",
+      "eventDate": "2014-07-31T11:36:33 +07:00",
+      "venue": "171 Canda Avenue, Hardyville, Virginia, 2108",
+      "numberOfTickets": 951,
+      "bidToBeatPrice": "$1,663.63",
+      "bidEndTime": "2015-01-21T07:22:34 +08:00"
+    }
+  },
+  {
+    "eventId": 1,
+    "logoPath": "img/baseball.png",
+    "eventName": "Entroflex",
+    "eventDate": "2017-05-15T11:10:28 +07:00",
+    "venue": "548 Strauss Street, Guilford, Oregon, 3758",
+    "numberOfTickets": 637,
+    "numberOfBids": 4,
+    "bidToBeatPrice": "$1,210.54",
+    "bidEndTime": "2016-06-25T10:49:03 +07:00",
+    "businessOwner": "Jackson Wise",
+    "eventConfigureData": {
+      "eventId": 1,
+      "logoPath": "http://placehold.it/32x32",
+      "eventName": "Asimiline",
+      "eventDate": "2016-08-19T03:14:46 +07:00",
+      "venue": "548 Brooklyn Road, Epworth, Utah, 530",
+      "numberOfTickets": 737,
+      "floorPrice": "$1,636",
+      "cielingPrice": "$3,587"
+    },
+    "eventBidData": {
+      "eventId": 1,
+      "logoPath": "http://placehold.it/32x32",
+      "eventDate": "2014-12-13T01:33:19 +08:00",
+      "venue": "289 Essex Street, Greenfields, South Dakota, 2998",
+      "numberOfTickets": 419,
+      "bidToBeatPrice": "$1,398.88",
+      "bidEndTime": "2016-11-19T12:50:36 +08:00"
+    }
+  },
+  {
+    "eventId": 2,
+    "logoPath": "img/basketball.png",
+    "eventName": "Savvy",
+    "eventDate": "2015-03-31T07:20:56 +07:00",
+    "venue": "926 Chester Street, Aurora, Oklahoma, 5873",
+    "numberOfTickets": 490,
+    "numberOfBids": 8,
+    "bidToBeatPrice": "$3,810.23",
+    "bidEndTime": "2017-04-01T06:49:09 +07:00",
+    "businessOwner": "Wright Ramsey",
+    "eventConfigureData": {
+      "eventId": 2,
+      "logoPath": "http://placehold.it/32x32",
+      "eventName": "Farmage",
+      "eventDate": "2015-11-17T04:03:58 +08:00",
+      "venue": "199 Fleet Walk, Helen, Rhode Island, 721",
+      "numberOfTickets": 988,
+      "floorPrice": "$1,753",
+      "cielingPrice": "$3,498"
+    },
+    "eventBidData": {
+      "eventId": 2,
+      "logoPath": "http://placehold.it/32x32",
+      "eventDate": "2016-09-23T03:15:25 +07:00",
+      "venue": "903 Taylor Street, Orason, Wisconsin, 825",
+      "numberOfTickets": 962,
+      "bidToBeatPrice": "$3,967.12",
+      "bidEndTime": "2014-02-12T11:33:01 +08:00"
+    }
+  },
+  {
+    "eventId": 3,
+    "logoPath": "img/baseball.png",
+    "eventName": "Frolix",
+    "eventDate": "2014-01-07T10:14:22 +08:00",
+    "venue": "537 Campus Road, Edmund, Idaho, 1558",
+    "numberOfTickets": 484,
+    "numberOfBids": 7,
+    "bidToBeatPrice": "$1,397.67",
+    "bidEndTime": "2016-11-19T04:45:40 +08:00",
+    "businessOwner": "Thompson Mendoza",
+    "eventConfigureData": {
+      "eventId": 3,
+      "logoPath": "http://placehold.it/32x32",
+      "eventName": "Artiq",
+      "eventDate": "2014-03-27T04:50:11 +07:00",
+      "venue": "276 Garnet Street, Bancroft, Iowa, 3377",
+      "numberOfTickets": 62,
+      "floorPrice": "$1,666",
+      "cielingPrice": "$3,668"
+    },
+    "eventBidData": {
+      "eventId": 3,
+      "logoPath": "http://placehold.it/32x32",
+      "eventDate": "2017-03-24T09:21:02 +07:00",
+      "venue": "197 Surf Avenue, Dexter, Maryland, 9967",
+      "numberOfTickets": 429,
+      "bidToBeatPrice": "$3,430.45",
+      "bidEndTime": "2014-08-17T02:14:43 +07:00"
+    }
+  },
+  {
+    "eventId": 4,
+    "logoPath": "img/basketball.png",
+    "eventName": "Steelfab",
+    "eventDate": "2016-02-25T07:52:48 +08:00",
+    "venue": "142 Beacon Court, Yonah, Virgin Islands, 2106",
+    "numberOfTickets": 332,
+    "numberOfBids": 2,
+    "bidToBeatPrice": "$2,503.08",
+    "bidEndTime": "2017-02-07T08:51:48 +08:00",
+    "businessOwner": "Bertha Sparks",
+    "eventConfigureData": {
+      "eventId": 4,
+      "logoPath": "http://placehold.it/32x32",
+      "eventName": "Furnafix",
+      "eventDate": "2014-06-02T01:15:26 +07:00",
+      "venue": "661 Green Street, Kenvil, South Carolina, 4446",
+      "numberOfTickets": 339,
+      "floorPrice": "$1,762",
+      "cielingPrice": "$3,316"
+    },
+    "eventBidData": {
+      "eventId": 4,
+      "logoPath": "http://placehold.it/32x32",
+      "eventDate": "2017-03-15T02:17:08 +07:00",
+      "venue": "920 Newton Street, Ezel, New Hampshire, 3176",
+      "numberOfTickets": 714,
+      "bidToBeatPrice": "$1,250.79",
+      "bidEndTime": "2014-03-13T04:13:50 +07:00"
+    }
+  },
+  {
+    "eventId": 5,
+    "logoPath": "img/baseball.png",
+    "eventName": "Emergent",
+    "eventDate": "2017-03-04T12:02:25 +08:00",
+    "venue": "507 Rogers Avenue, Drytown, Pennsylvania, 2355",
+    "numberOfTickets": 634,
+    "numberOfBids": 10,
+    "bidToBeatPrice": "$2,942.58",
+    "bidEndTime": "2017-03-24T02:43:42 +07:00",
+    "businessOwner": "Elma Burke",
+    "eventConfigureData": {
+      "eventId": 5,
+      "logoPath": "http://placehold.it/32x32",
+      "eventName": "Optyk",
+      "eventDate": "2015-10-19T08:35:19 +07:00",
+      "venue": "857 Grattan Street, Cotopaxi, Missouri, 6128",
+      "numberOfTickets": 160,
+      "floorPrice": "$1,899",
+      "cielingPrice": "$3,528"
+    },
+    "eventBidData": {
+      "eventId": 5,
+      "logoPath": "http://placehold.it/32x32",
+      "eventDate": "2016-08-21T01:05:32 +07:00",
+      "venue": "157 Kings Place, Makena, Ohio, 2446",
+      "numberOfTickets": 789,
+      "bidToBeatPrice": "$2,254.93",
+      "bidEndTime": "2014-04-27T01:20:00 +07:00"
+    }
+  },
+  {
+    "eventId": 6,
+    "logoPath": "img/basketball.png",
+    "eventName": "Orbaxter",
+    "eventDate": "2016-07-05T08:08:54 +07:00",
+    "venue": "147 Bergen Place, Herbster, Washington, 4608",
+    "numberOfTickets": 633,
+    "numberOfBids": 8,
+    "bidToBeatPrice": "$1,822.52",
+    "bidEndTime": "2014-02-08T08:21:56 +08:00",
+    "businessOwner": "Deloris Sears",
+    "eventConfigureData": {
+      "eventId": 6,
+      "logoPath": "http://placehold.it/32x32",
+      "eventName": "Xiix",
+      "eventDate": "2016-12-11T10:06:34 +08:00",
+      "venue": "295 Bedford Place, Trucksville, Florida, 1891",
+      "numberOfTickets": 726,
+      "floorPrice": "$1,150",
+      "cielingPrice": "$3,217"
+    },
+    "eventBidData": {
+      "eventId": 6,
+      "logoPath": "http://placehold.it/32x32",
+      "eventDate": "2014-10-17T10:00:12 +07:00",
+      "venue": "673 Battery Avenue, Homestead, Wyoming, 9087",
+      "numberOfTickets": 594,
+      "bidToBeatPrice": "$2,734.02",
+      "bidEndTime": "2015-09-06T06:04:24 +07:00"
+    }
+  },
+  {
+    "eventId": 7,
+    "logoPath": "img/baseball.png",
+    "eventName": "Olucore",
+    "eventDate": "2014-11-03T06:53:06 +08:00",
+    "venue": "984 Plaza Street, Hebron, Louisiana, 4322",
+    "numberOfTickets": 472,
+    "numberOfBids": 8,
+    "bidToBeatPrice": "$3,843.59",
+    "bidEndTime": "2016-06-03T08:47:03 +07:00",
+    "businessOwner": "Evangeline Miranda",
+    "eventConfigureData": {
+      "eventId": 7,
+      "logoPath": "http://placehold.it/32x32",
+      "eventName": "Typhonica",
+      "eventDate": "2016-07-01T02:12:47 +07:00",
+      "venue": "811 Cambridge Place, Grimsley, Mississippi, 2315",
+      "numberOfTickets": 270,
+      "floorPrice": "$1,374",
+      "cielingPrice": "$3,855"
+    },
+    "eventBidData": {
+      "eventId": 7,
+      "logoPath": "http://placehold.it/32x32",
+      "eventDate": "2016-12-13T02:26:01 +08:00",
+      "venue": "130 Kenmore Court, Wright, Colorado, 5504",
+      "numberOfTickets": 386,
+      "bidToBeatPrice": "$3,095.09",
+      "bidEndTime": "2014-05-20T01:31:42 +07:00"
+    }
+  },
+  {
+    "eventId": 8,
+    "logoPath": "img/basketball.png",
+    "eventName": "Hopeli",
+    "eventDate": "2016-11-08T09:18:21 +08:00",
+    "venue": "969 Sullivan Place, Kimmell, Northern Mariana Islands, 9895",
+    "numberOfTickets": 355,
+    "numberOfBids": 4,
+    "bidToBeatPrice": "$1,661.68",
+    "bidEndTime": "2014-07-18T04:03:46 +07:00",
+    "businessOwner": "Dominique Wall",
+    "eventConfigureData": {
+      "eventId": 8,
+      "logoPath": "http://placehold.it/32x32",
+      "eventName": "Comfirm",
+      "eventDate": "2015-11-05T08:38:55 +08:00",
+      "venue": "120 Hubbard Place, Umapine, Maine, 771",
+      "numberOfTickets": 23,
+      "floorPrice": "$1,792",
+      "cielingPrice": "$3,420"
+    },
+    "eventBidData": {
+      "eventId": 8,
+      "logoPath": "http://placehold.it/32x32",
+      "eventDate": "2016-10-15T11:29:52 +07:00",
+      "venue": "846 Winthrop Street, Thornport, Puerto Rico, 6095",
+      "numberOfTickets": 828,
+      "bidToBeatPrice": "$3,561.55",
+      "bidEndTime": "2014-06-29T04:21:18 +07:00"
+    }
+  },
+  {
+    "eventId": 9,
+    "logoPath": "img/basketball.png",
+    "eventName": "Applica",
+    "eventDate": "2015-10-03T04:30:20 +07:00",
+    "venue": "423 Howard Avenue, Rosedale, Alabama, 797",
+    "numberOfTickets": 434,
+    "numberOfBids": 7,
+    "bidToBeatPrice": "$1,516.35",
+    "bidEndTime": "2015-12-04T01:31:46 +08:00",
+    "businessOwner": "Sherri Tate",
+    "eventConfigureData": {
+      "eventId": 9,
+      "logoPath": "http://placehold.it/32x32",
+      "eventName": "Fangold",
+      "eventDate": "2014-11-10T11:05:19 +08:00",
+      "venue": "337 Ash Street, Broadlands, Georgia, 7461",
+      "numberOfTickets": 27,
+      "floorPrice": "$1,704",
+      "cielingPrice": "$3,914"
+    },
+    "eventBidData": {
+      "eventId": 9,
+      "logoPath": "http://placehold.it/32x32",
+      "eventDate": "2015-01-02T08:23:27 +08:00",
+      "venue": "572 Brighton Court, Juarez, Nevada, 706",
+      "numberOfTickets": 50,
+      "bidToBeatPrice": "$1,770.88",
+      "bidEndTime": "2015-08-24T11:40:53 +07:00"
+    }
+  }
+]

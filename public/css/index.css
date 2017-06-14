@@ -1,0 +1,178 @@
+/*body{
+	width: 100%;
+	height: 100%;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+
+.container{
+	width: 95% !important;
+	height: 100% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.row-style{
+	margin: 3% 0;
+}
+
+.table-container{
+	width: 90% !important;
+	height: 100% !important;
+}
+
+.table-col{
+	width: 10% !important;
+}*/
+
+.clear, .clear-10, .clear-15 {
+  clear: both;
+  height: 0; overflow: hidden; /* Précaution pour IE 7 */
+}
+.clear-10 {
+  margin-bottom: 10px
+}
+.clear-15 {
+  margin-bottom: 15px
+}
+
+.detailsButton{
+	background-color: #7e57c2 !important;
+}
+
+
+.bidToBeat{
+	color: #4caf50 !important;
+	font-weight: bold !important;
+}
+
+
+#bid-updated-text{
+	color: red;
+	font-size: 9px;
+	font-weight: bold !important;
+	
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: relative; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 50%; /* Full width */
+    height: 70% !important; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-header{
+	background-color: #7e57c2 !important;
+	height:15%;
+	font-weight: bold !important;
+	color: #fff !important;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    
+    margin: 1% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */
+    height:100%;
+    font-weight: bold;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+    border: none !important;
+}
+
+.modal-header p{
+	 font-weight: bold;
+}
+
+.modal-content div{
+	width: 50%;
+	margin: 0 auto;
+}
+
+.bidSubmit{
+	
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    transition: .3s ease-out;
+    text-decoration: none;
+    color: #fff;
+    background-color: #7e57c2 !important;
+    text-align: center;
+    letter-spacing: .5px;
+    width: 40% !important;
+	margin: 0 2% !important;
+	height: 2.3rem !important;
+  
+    
+}
+
+#autobidSubmit{
+ cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    transition: .3s ease-out;
+    text-decoration: none;
+    color: #fff;
+    background-color: #7e57c2;
+    text-align: center;
+    letter-spacing: .5px;
+    width: 90% !important;
+	margin: 0 2% !important;
+	height: 2.3rem !important;
+}
+
+#or{
+	width: 100%;
+	margin: 20px auto;
+
+}
+.modal-content input{
+	float:left;
+	display:block;
+	width: 40% !important;
+	margin: 0 2% !important;
+	height: 2.3rem !important;
+}
+
+
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

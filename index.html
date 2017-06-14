@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Broker bid ask</title>
+
+
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+ 
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Animation library for notifications   -->
+    <link href="css/animate.min.css" rel="stylesheet"/>
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="css/light-bootstrap-dashboard.css" rel="stylesheet"/>
+
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="css/demo.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" /> 
+
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="css/pe-icon-7-stroke.css" rel="stylesheet" />
+
+
+	<!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+</head>
+<body>
+
+<div class="sidebar" data-color="purple" data-image="img/sidebar-5.jpg">
+
+    <!--
+
+        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+        Tip 2: you can also add an image using data-image tag
+
+    -->
+
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="http://www.stubhuv.com" class="simple-text">
+                    Broker Bid Ask
+                </a>
+            </div>
+
+            <ul class="nav">
+                <li class="active">
+                    <a href="/">
+            
+                        <p>Live Auction</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/charts">
+                      
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+               
+            </ul>
+    	</div>
+    <div class="sidebar-background" style="background-image: url(assets/img/sidebar-5.jpg) "></div></div>
+
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Live Auction</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-dashboard"></i>
+                            </a>
+                        </li>
+                       
+                        
+                    </ul>
+
+                   
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="content">
+            <div class="container-fluid">
+
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="card ">
+                            <div class="content">
+                                <div class="table-full-width">
+                                    <table class="table">
+
+                                    	 <thead>
+									          <tr>
+									              <th>Event</th>
+									              <th>Event Name</th>
+									              <th>Event Date</th>
+									              <th>Venue</th>
+									              <th>No. of tickets</th>
+									              <th>No. of bids</th>
+									              <th>Bid to beat</th>
+									              <th>Remaining time</th>
+									              <th>Bid Details</th>
+									              <th>Business Owner</th>
+									          </tr>
+									        </thead>
+                                        <tbody class="auction-body">
+                                           
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+       
+    </div>
+
+
+    <script type="text/javascript">
+
+
+    var socket = io();
+    	$(document).ready(function(){
+    		getJSONData();
+    	});
+
+    	function getJSONData(){
+    		$.getJSON( "../event-data.json", function( data ) {
+				  var items = [];
+				  console.log("Data... "+data);
+				  $.each( data, function( event ) {
+				  	 console.log("Event... "+data[event]);
+				  	var tr = $('<tr/>',{ id: "event-row"+data[event].eventId});
+				  	var td0 = $('<td/>').html(data[event].event)
+				  	var img = $('<img>'); //Equivalent: $(document.createElement('img'))
+						img.attr({'src': data[event].logoPath,
+									'height': '40',
+									'width':'40'
+									});
+						img.appendTo(td0);
+				  	var td1 = $('<td/>').html(data[event].eventName);
+				  	var td2 = $('<td/>').html(data[event].eventDate);
+				  	var td3 = $('<td/>').html(data[event].venue);
+				  	var td4 = $('<td/>').html(data[event].numberOfTickets);
+				  	var td5 = $('<td/>').html(data[event].numberOfBids);
+				  	var td6 = $('<td/>',{class: 'bidToBeat'}).html(data[event].bidToBeatPrice);
+				  		
+
+
+				  	var td7 = $('<td/>').html(data[event].bidEndTime);
+				  	var td8 = $('<td/>');
+				  		var btn = $('<a/>',{class:'waves-effect btn detailsButton',
+				  							href: 'javascript:showModal('+JSON.stringify(data[event])+','+event+');' ,
+				  							text: 'BID' });
+				  	btn.appendTo(td8);
+				  	var td9 = $('<td/>').html(data[event].businessOwner);
+				  	
+
+				  	console.log("Getting data..."+data[event].eventName);
+				  	td0.appendTo(tr);
+				  	td1.appendTo(tr);
+				  	td2.appendTo(tr);
+				  	td3.appendTo(tr);
+				  	td4.appendTo(tr);
+				  	td5.appendTo(tr);
+				  	td6.appendTo(tr);
+				  	td7.appendTo(tr);
+				  	td8.appendTo(tr);
+				  	td9.appendTo(tr);
+				  	
+				  	tr.appendTo('.auction-body');
+				  
+				  });
+				 
+				});
+    	}
+
+
+			// When the user clicks on <span> (x), close the modal
+			$('.close').click(function(){
+				 $('#myModal').css("display","none");
+				 $('#myModal div').css("display","none");
+				})
+
+
+			
+
+		    function showModal(data,id){
+		    		console.log(data+" "+id);
+		    		  $('#myModal').css("display","block");
+
+
+		    		  var ul = $('<ul/>');
+
+		    		  var data1 = $('<p/>',{text:'Event name: '+data.eventConfigureData.eventName});
+		    		   var data2 = $('<p/>',{text:'Event Date: '+data.eventConfigureData.eventDate});
+		    		   var data3 = $('<p/>',{text:'Event Venue: '+data.eventConfigureData.venue});
+		    		   var data4 = $('<p/>',{text:'Number of tickets: '+data.eventConfigureData.numberOfTickets});
+		    		   var data5 = $('<p/>',{text:'Minimum Price: '+data.eventConfigureData.floorPrice});
+		    		   var data6 = $('<p/>',{text:'Maximum Price: '+data.eventConfigureData.cielingPrice});
+
+		    		  data1.appendTo('.modal-header');
+
+		    		  data2.appendTo(ul);
+		    		  data3.appendTo(ul);
+		    		  data4.appendTo(ul);
+		    		  data5.appendTo(ul);
+		    		  data6.appendTo(ul);
+
+		    		  ul.appendTo('.modal-content');
+
+		    		  var bidContainer = $('<div />');
+		    		  var autobidContainer = $('<div />');
+
+		    		  var bidBox = $('<input/>').attr({ type: 'text', id: 'biddingBox', name: 'BID'})
+		    		  var bidBtn = $('<a/>',{text: 'bid (in USD)'}).attr({ id: 'bidSubmit', class:'waves-effect btn', href:'javascript:submitBid('+id+');'});
+		    		  bidBox.css('width','70% !important');
+		    		  bidBox.appendTo(bidContainer);
+		    		  bidBtn.appendTo(bidContainer);
+
+		    		  console.log(data.bidToBeatPrice.substring(1));
+
+		    		  var baseValues = $('#event-row'+id).find('.bidToBeat').text().substring(1).split(",");
+		    		  var baseP = baseValues[0]+baseValues[1];
+		    		  var baseBid =  parseFloat(baseP).toFixed(2);
+
+		    		  var marginValues = data.eventConfigureData.floorPrice.substring(1).split(",");
+		    		  var m = marginValues[0]+marginValues[1];
+		    		  var margin = ((1/100) * parseInt(m)).toFixed(2);
+		    		  var autoCalculatedBid =   parseFloat(baseBid) + parseFloat(margin);
+
+		    		  console.log('Current: '+baseBid+" margin: "+margin+" calc: "+autoCalculatedBid);
+		    		  var autobidBtn = $('<a/>',{text: 'autobid ($'+autoCalculatedBid+')'}).attr({ id: 'autobidSubmit', class:'waves-effect btn', href:'javascript:autoSubmitBid('+id+','+autoCalculatedBid+');'});
+
+
+		    		  var or = $('<p/>',{id:'or',class:'text-center'}).html('OR');
+		    		  autobidBtn.appendTo(autobidContainer);
+		    		  bidContainer.appendTo('.modal-content');
+		    		  or.appendTo('.modal-content');
+		    		  autobidContainer.appendTo('.modal-content'); 
+
+		   	}
+
+		   	function submitBid(id){
+		   		if($('#myModal').css('display')==='block'){
+		   			$('#myModal').css('display','none');
+		   		}
+		   		var amount = $('#biddingBox').val();
+		   		 socket.emit('bid-set', {amount:amount,id:id});
+		   		 	$('.modal-header').empty();
+		   		 	$('.modal-content').empty();		   	
+		   	}
+
+		   	function autoSubmitBid(id,amount){
+		   		if($('#myModal').css('display')==='block'){
+		   			$('#myModal').css('display','none');
+		   		}
+
+		   		socket.emit('bid-set', {amount:amount,id:id});
+		   		 	$('.modal-header').empty();
+		   		 	$('.modal-content').empty();
+		   	}
+
+
+		   	socket.on('update-bid',function(data){
+		   			console.log("Updated bid for: "+data.id);
+		   			$('#event-row'+data.id).find('.bidToBeat').html('$'+data.amount);
+		   			//if($('#event-row'+data.id).find('#bid-updated-text').css('display')=='none')
+		   			var updateText = $('<p/>',{id: 'bid-updated-text',class:'animated fadeIn'}).html('Bid Updated');updateText.appendTo($('#event-row'+data.id).find('.bidToBeat'));
+		   	});
+    </script>
+
+
+    <div id="myModal" class="modal fade in">
+    		<div class="modal-header">
+    			 <span class="close">&times;</span>
+    		</div>
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		   
+		    
+
+		  </div>
+
+	</div>
+
+</body>
+</html>

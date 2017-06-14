@@ -1,0 +1,42 @@
+/*body{
+	width: 100%;
+	height: 100%;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+
+.container{
+	width: 95% !important;
+	height: 100% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.row-style{
+	margin: 3% 0;
+}
+
+.table-container{
+	width: 90% !important;
+	height: 100% !important;
+}
+
+.table-col{
+	width: 10% !important;
+}*/
+
+.clear, .clear-10, .clear-15 {
+  clear: both;
+  height: 0; overflow: hidden; /* Précaution pour IE 7 */
+}
+.clear-10 {
+  margin-bottom: 10px
+}
+.clear-15 {
+  margin-bottom: 15px
+}
+
+.detailsButton{
+	background-color: red;
+}
